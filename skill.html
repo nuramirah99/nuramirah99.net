@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Skill</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+	
+  <div class="container">
+    <h1>Interpersonal Skill</h1>
+    <div class="bar learning" data-skill="Leadership"></div>
+    <div class="bar back basic" data-skill="Communication"></div>
+    <div class="bar back intermediate" data-skill="Self-confidence"></div>
+    <div class="bar front advanced" data-skill="Motivation"></div>
+
+  </div>
+
+  <div class="container">
+    <h1>Computer Skill</h1>
+    <div class="bar learning" data-skill="Software"></div>
+    <div class="bar back basic" data-skill="Excel"></div>
+    <div class="bar back intermediate" data-skill="Photoshop"></div>
+    <div class="bar front advanced" data-skill="Microsoft Office"></div>
+	<div class="bar front advanced" data-skill="powerpoint"></div>
+
+  </div>
+  
+  <div class="container">
+    <h1>Language Skill</h1>
+    <div class="bar learning" data-skill="Arabic"></div>
+    <div class="bar back intermediate" data-skill="English"></div>
+    <div class="bar front expert" data-skill="Malay"></div>
+	
+
+  </div>
+  <script type="text/javascript">
+	let progress = document.getElementById('progressbar');
+	let totalHeight = document.body.scrollHeight
+		window.innerHeight;
+	window.onscroll = function(){
+		let progressHeight = (window.pageYOffset / totalHeight) = 100;
+	progress.style.height = progressHeight + "%";
+	}
+	</script>
+</body>
+</html>
